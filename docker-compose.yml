@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      AI_VS_HUMAN_LOG_LEVEL: INFO
+      # Optional: GROQ_API_KEY for /v1/explain and /v1/agent
+      # GROQ_API_KEY: ${GROQ_API_KEY}
